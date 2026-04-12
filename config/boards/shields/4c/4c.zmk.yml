@@ -1,0 +1,12 @@
+file_format: "1"
+id: 4c
+name: 4c
+type: shield
+url: https://github.com/ilyakotlov/4c-zmk-layout
+requires: [pro_micro]
+features:
+  - keys
+  - display
+siblings:
+  - 4c_left
+  - 4c_right
