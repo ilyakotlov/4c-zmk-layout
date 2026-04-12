@@ -6,8 +6,8 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: 4c_left
+    shield: 4c_left nice_view
   - board: nice_nano//zmk
-    shield: 4c_right
+    shield: 4c_right nice_view
   - board: nice_nano//zmk
     shield: settings_reset
