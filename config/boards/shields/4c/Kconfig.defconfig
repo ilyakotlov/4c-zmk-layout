@@ -6,6 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
 config ZMK_IDLE_TIMEOUT
@@ -13,9 +16,6 @@ config ZMK_IDLE_TIMEOUT
 
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 1800000
-
-config ZMK_USB
-    default y
 
 if SHIELD_4C_RIGHT || SHIELD_4C_LEFT
 
