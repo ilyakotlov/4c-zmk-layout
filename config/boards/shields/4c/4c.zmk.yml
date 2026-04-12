@@ -7,6 +7,7 @@ requires: [pro_micro]
 features:
   - keys
   - display
+  - studio
 siblings:
   - 4c_left
   - 4c_right
