@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans       &trans   &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans       &trans   &trans    &kp A         &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans       &trans   &trans    &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &bootloader  &studio_unlock                   &trans        &sys_reset    &trans        &trans        &trans
+&trans  &trans  &trans  &bootloader  &trans                           &trans        &sys_reset    &trans        &trans        &trans
             >;
         };
     };
