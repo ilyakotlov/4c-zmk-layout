@@ -1,0 +1,15 @@
+if SHIELD_OLED_I2C_P0P2_SWAP_3D
+
+config ZMK_DISPLAY
+    default y
+
+config ZMK_DISPLAY_BLANK_ON_IDLE
+    default y
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+endif

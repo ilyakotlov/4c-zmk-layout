@@ -1,0 +1,30 @@
+/ {
+    gpioi2c: gpio_i2c {
+        compatible = "gpio-i2c";
+        status = "okay";
+        clock-frequency = <100000>;
+        sda-gpios = <&pro_micro 0 (GPIO_OPEN_DRAIN | GPIO_PULL_UP)>;
+        scl-gpios = <&pro_micro 2 (GPIO_OPEN_DRAIN | GPIO_PULL_UP)>;
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        oled: ssd1306@3c {
+            compatible = "sinowealth,sh1106";
+            reg = <0x3c>;
+            width = <128>;
+            height = <64>;
+            segment-offset = <2>;
+            page-offset = <0>;
+            display-offset = <0>;
+            multiplex-ratio = <63>;
+            segment-remap;
+            com-invdir;
+            prechargep = <0x22>;
+            status = "okay";
+        };
+    };
+
+    chosen {
+        zephyr,display = &oled;
+    };
+};
