@@ -1,6 +1,0 @@
-file_format: "1"
-id: 4c_display_p0p2_swap
-name: 4c Display P0/P2 Swap
-type: shield
-url: https://github.com/ilyakotlov/4c-zmk-layout
-requires: [pro_micro]

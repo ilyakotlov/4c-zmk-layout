@@ -1,8 +1,0 @@
-file_format: "1"
-id: oled_i2c_p0p2
-name: OLED I2C P0/P2
-type: shield
-url: https://github.com/ilyakotlov/4c-zmk-layout
-requires: [pro_micro]
-features:
-  - display

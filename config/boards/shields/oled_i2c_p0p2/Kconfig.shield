@@ -1,2 +1,0 @@
-config SHIELD_OLED_I2C_P0P2
-    def_bool $(shields_list_contains,oled_i2c_p0p2)
