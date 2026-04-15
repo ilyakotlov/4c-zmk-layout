@@ -1,0 +1,8 @@
+file_format: "1"
+id: oled_i2c_p0p2_swap_seq_remap
+name: OLED I2C P0/P2 Swap Sequential COM Remap
+type: shield
+url: https://github.com/ilyakotlov/4c-zmk-layout
+requires: [pro_micro]
+features:
+  - display

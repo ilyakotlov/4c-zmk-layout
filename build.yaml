@@ -44,4 +44,12 @@ include:
     shield: 4c_right oled_i2c_p0p2_swap_seq
     artifact-name: 4c_right_oled_i2c_p0p2_swap_seq
   - board: nice_nano//zmk
+    shield: 4c_left oled_i2c_p0p2_swap_seq_remap
+    artifact-name: 4c_left_oled_i2c_p0p2_swap_seq_remap
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+  - board: nice_nano//zmk
+    shield: 4c_right oled_i2c_p0p2_swap_seq_remap
+    artifact-name: 4c_right_oled_i2c_p0p2_swap_seq_remap
+  - board: nice_nano//zmk
     shield: settings_reset
