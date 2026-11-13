@@ -2,10 +2,14 @@ manifest:
   remotes:
     - name: zmk
       url-base: https://github.com/zmkfirmware
+    # ZMK fork with the HID layer-state report (for the ZMK Layer Monitor macOS app).
+    # Based on ZMK main; to go back to stock ZMK set remote: zmk, revision: main.
+    - name: pfilipp
+      url-base: https://github.com/pfilipp
   projects:
     - name: zmk
-      remote: zmk
-      revision: main
+      remote: pfilipp
+      revision: layer-state-report
       import: app/west.yml
   self:
     path: config

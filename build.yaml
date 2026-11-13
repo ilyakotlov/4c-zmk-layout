@@ -4,18 +4,19 @@
 # control, add individual board + shield combinations to
 # the `include` property.
 ---
+# Layer state HID report (ZMK Layer Monitor) is enabled only on the left half: it is the central.
 include:
   - board: nice_nano//zmk
     shield: 4c_left nice_view
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right nice_view
   - board: nice_nano//zmk
     shield: 4c_left oled_i2c_p0p2_swap
     artifact-name: 4c_left_oled_i2c_p0p2_swap
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right oled_i2c_p0p2_swap
     artifact-name: 4c_right_oled_i2c_p0p2_swap
@@ -23,7 +24,7 @@ include:
     shield: 4c_left oled_i2c_p0p2_swap_noinv
     artifact-name: 4c_left_oled_i2c_p0p2_swap_noinv
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right oled_i2c_p0p2_swap_noinv
     artifact-name: 4c_right_oled_i2c_p0p2_swap_noinv
@@ -31,7 +32,7 @@ include:
     shield: 4c_left oled_i2c_p0p2_swap_plain
     artifact-name: 4c_left_oled_i2c_p0p2_swap_plain
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right oled_i2c_p0p2_swap_plain
     artifact-name: 4c_right_oled_i2c_p0p2_swap_plain
@@ -39,7 +40,7 @@ include:
     shield: 4c_left oled_i2c_p0p2_swap_seq
     artifact-name: 4c_left_oled_i2c_p0p2_swap_seq
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right oled_i2c_p0p2_swap_seq
     artifact-name: 4c_right_oled_i2c_p0p2_swap_seq
@@ -47,7 +48,7 @@ include:
     shield: 4c_left oled_i2c_p0p2_swap_seq_remap
     artifact-name: 4c_left_oled_i2c_p0p2_swap_seq_remap
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_HID_LAYER_STATE_REPORT=y
   - board: nice_nano//zmk
     shield: 4c_right oled_i2c_p0p2_swap_seq_remap
     artifact-name: 4c_right_oled_i2c_p0p2_swap_seq_remap
